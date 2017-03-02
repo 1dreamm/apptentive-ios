@@ -42,6 +42,10 @@
 
 	self.progressView.frame = CGRectMake(0.0, height - CGRectGetHeight(self.progressView.bounds), CGRectGetWidth(self.bounds), CGRectGetHeight(self.progressView.bounds));
 	self.progressView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleTopMargin;
+
+	self.translucent = NO;
+	self.tintColor = [UIColor whiteColor];
+	[self setTitleTextAttributes:@{NSForegroundColorAttributeName : [UIColor whiteColor]}];
 }
 
 @end
